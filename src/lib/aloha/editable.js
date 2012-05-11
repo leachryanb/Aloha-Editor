@@ -22,8 +22,6 @@ define( [
 	'aloha/core',
 	'util/class',
 	'aloha/jquery',
-	'aloha/pluginmanager',
-	'aloha/floatingmenu',
 	'aloha/selection',
 	'aloha/markup',
 	'aloha/contenthandlermanager',
@@ -172,7 +170,7 @@ define( [
 
 			// apply content handler to clean up content
 			// this was activated by accident; see comments around line 240 regarding plugins!
-			// does look like here it would be fine regarding the plugins... 
+			// does look like here it would be fine regarding the plugins...
 			//var content = me.obj.html();
 			//if ( typeof Aloha.settings.contentHandler.initEditable === 'undefined' ) {
 			//	Aloha.settings.contentHandler.initEditable = Aloha.defaults.contentHandler.initEditable;
@@ -668,7 +666,7 @@ define( [
 			this.obj.removeClass( 'aloha-editable-active' );
 
 			/**
-			 * @event aloha-editable-deactivated fires after the editable has been deactivated 
+			 * @event aloha-editable-deactivated fires after the editable has been deactivated
 			 * by clicking on an other editable or a non editable part of the page
 			 * This event is triggered in Aloha's global scope Aloha
 			 * @param {Object} a an object which contains a reference to this editable
